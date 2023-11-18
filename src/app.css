@@ -1,3 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@700&family=Montserrat:wght@400;600&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+	body {
+		font-family: theme(fontFamily.sans);
+		font-size: theme(fontSize.base);
+		color: theme(colors.primary);
+		background-color: theme(colors.primary);
+	}
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		font-family: theme(fontFamily.serif);
+	}
+	h1 {
+		font-size: theme(fontSize.3xl);
+	}
+	h2 {
+		font-size: theme(fontSize.2xl);
+		margin-bottom: 2rem;
+		margin-top: 2rem;
+	}
+	h3 {
+		font-size: theme(fontSize.xl);
+	}
+	p {
+		margin-bottom: 1.5rem;
+	}
+	a {
+		text-decoration: underline;
+		color: theme(colors.secondary);
+	}
+}
+@layer components {
+	header {
+		height: 60svh;
+		object-fit: cover;
+	}
+	.btn {
+		@apply px-6 py-4 rounded-md shadow-md bg-primary text-white no-underline inline-flex items-center justify-center gap-5 mb-4;
+	}
+}
+@layer utilities {
+}
