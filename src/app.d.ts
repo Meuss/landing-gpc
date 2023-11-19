@@ -8,5 +8,7 @@ declare global {
 		// interface Platform {}
 	}
 }
+declare module 'gsap/dist/gsap';
+declare module 'gsap/dist/ScrollSmoother';
 
 export {};

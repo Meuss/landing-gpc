@@ -4,9 +4,11 @@
 	import courtSmall from '$lib/assets/court-small.webp';
 </script>
 
-<header class="relative flex flex-col justify-end pb-10 text-white">
+<header class="relative flex flex-col justify-end pb-10 text-white lg:pb-20">
 	<div class="container">
-		<h1>Sortez vos raquettes,<br />le Padel débarque à Bulle!</h1>
+		<div>
+			<h1>Sortez vos raquettes,<br />le Padel débarque à Bulle!</h1>
+		</div>
 	</div>
 	<div class="absolute inset-0 -z-10">
 		<img

@@ -6,6 +6,21 @@
 	import instagram from '$lib/assets/instagram.svg';
 	import whatsapp from '$lib/assets/whatsapp.svg';
 	import { whatsapplink, instagramlink, email } from '$lib/variables';
+	import { gsap } from 'gsap';
+	import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
+	import { ScrollSmoother } from 'gsap/dist/ScrollSmoother';
+	import { onMount } from 'svelte';
+
+	gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
+	onMount(() => {
+		const smoother = ScrollSmoother.create({
+			content: '.wrapper',
+			smooth: 0.2,
+			effects: false
+		});
+
+		smoother.effects('.image_cont img', { speed: 'auto' });
+	});
 </script>
 
 <Header />
@@ -35,13 +50,15 @@
 
 		<section>
 			<div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
-				<img
-					srcset="{racketsSmall} 1000w, {rackets} 2000w"
-					sizes="(max-width: 1000px) 1000px, 2000px"
-					src={rackets}
-					alt="Terrain de padel Bulle"
-				/>
-				<div class="lg:flex lg:flex-col lg:justify-center">
+				<div class="image_cont">
+					<img
+						srcset="{racketsSmall} 1000w, {rackets} 2000w"
+						sizes="(max-width: 1000px) 1000px, 2000px"
+						src={rackets}
+						alt="Terrain de padel Bulle"
+					/>
+				</div>
+				<div class="lg:flex lg:flex-col lg:justify-center lg:items-start">
 					<h2 class="lg:mt-0">Le Gruyère Padel Club</h2>
 					<p>
 						Le club a été formé en 2023 et souhaite promouvoir le Padel pour tous en Gruyère,
@@ -51,7 +68,7 @@
 						Dans ce cadre-là, un groupe WhatsApp a été lancé pour permettre à nos membres de se
 						retrouver sur les terrains et échanger entre eux.
 					</p>
-					<a class="btn" href={whatsapplink} target="_blank">
+					<a href={whatsapplink} target="_blank" class="btn">
 						<img src={whatsapp} alt="whatsapp" />
 						<span>Rejoindre le groupe</span>
 					</a>
@@ -67,7 +84,7 @@
 					target="_blank">{email}</a
 				>
 			</p>
-			<h2 class="lg:text-center">À bientôt sur les courts!</h2>
+			<h2 class="lg:text-center lg:mt-20">À bientôt sur les courts!</h2>
 		</section>
 	</div>
 </main>
