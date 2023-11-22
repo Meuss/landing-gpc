@@ -19,7 +19,7 @@
 				<h3 class="my-0 lg:text-4xl">Gruyère Padel Club</h3>
 			</div>
 			<div class="mb-8 mt-4 w-72 border-b border-solid border-b-white"></div>
-			<div class="mb-8 grid w-full max-w-[208px] grid-flow-col grid-cols-3 gap-3">
+			<div class="mb-8 grid w-full max-w-[150px] grid-flow-col grid-cols-2 gap-3">
 				<a
 					href={instagramlink}
 					target="_blank"
@@ -27,12 +27,12 @@
 				>
 					<img src={instagram} alt="instagram" class="inline-block" />
 				</a>
-				<a
+				<!-- <a
 					href={whatsapplink}
 					class="border p-4 rounded-full mx-auto flex flex-col justify-center transition-all duration-200 hover:scale-105"
 				>
 					<img src={whatsapp} alt="whatsapp" class="inline-block" />
-				</a>
+				</a> -->
 				<a
 					href={`mailto:${email}`}
 					class="border p-4 rounded-full mx-auto flex flex-col justify-center transition-all duration-200 hover:scale-105"
