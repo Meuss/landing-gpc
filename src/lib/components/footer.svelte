@@ -1,23 +1,21 @@
 <script>
 	let currentYear = new Date().getFullYear();
 	import instagram from '$lib/assets/footer-instagram.svg';
-	import whatsapp from '$lib/assets/footer-whatsapp.svg';
 	import emailicon from '$lib/assets/footer-email.svg';
 	import grue from '$lib/assets/footer-grue.svg';
 	import logo from '$lib/assets/footer-logo.svg';
-	import { whatsapplink, instagramlink, email } from '$lib/variables';
-	import pc_gruyere from '$lib/assets/pc_gruyere.svg';
-	import pc_gruyere_2 from '$lib/assets/pc_gruyere_2.svg';
+	import pdficon from '$lib/assets/pdf.svg';
+	import { instagramlink, email } from '$lib/variables';
 </script>
 
-<footer class="bg-primary text-white relative">
-	<div class="container py-8 lg:py-16 lg:flex lg:justify-between lg:items-center">
+<footer class="relative bg-primary text-white">
+	<div class="container py-8 lg:flex lg:items-center lg:justify-between lg:py-16">
 		<div class="hidden lg:block lg:flex-1">
 			<img src={logo} alt="Logo Gruyère Padel Club" class="scale-150" />
 		</div>
-		<div class="flex flex-col lg:items-center lg:flex-1">
+		<div class="flex flex-col lg:flex-1 lg:items-center">
 			<div class="flex items-center gap-2">
-				<img src={logo} alt="Logo Gruyère Padel Club" class="w-16 relative -left-2 lg:hidden" />
+				<img src={logo} alt="Logo Gruyère Padel Club" class="relative -left-2 w-16 lg:hidden" />
 				<h3 class="my-0 lg:text-4xl">Gruyère Padel Club</h3>
 			</div>
 			<div class="mb-8 mt-4 w-72 border-b border-solid border-b-white"></div>
@@ -25,45 +23,28 @@
 				<a
 					href={instagramlink}
 					target="_blank"
-					class="border p-4 rounded-full mx-auto flex flex-col justify-center transition-all duration-200 hover:scale-105"
+					class="mx-auto flex flex-col justify-center rounded-full border p-4 transition-all duration-200 hover:scale-105"
 				>
 					<img src={instagram} alt="instagram" class="inline-block" />
 				</a>
-				<!-- <a
-					href={whatsapplink}
-					class="border p-4 rounded-full mx-auto flex flex-col justify-center transition-all duration-200 hover:scale-105"
-				>
-					<img src={whatsapp} alt="whatsapp" class="inline-block" />
-				</a> -->
 				<a
 					href={`mailto:${email}`}
-					class="border p-4 rounded-full mx-auto flex flex-col justify-center transition-all duration-200 hover:scale-105"
+					class="mx-auto flex flex-col justify-center rounded-full border p-4 transition-all duration-200 hover:scale-105"
 				>
 					<img src={emailicon} alt="email" class="inline-block" />
 				</a>
 			</div>
+			<p class="flex gap-2 text-xs">
+				<a href="statuts.pdf" target="_blank" class="inline-flex gap-2 font-normal"
+					><span>Statuts du club</span> <img src={pdficon} alt="statuts pdf" /></a
+				>
+			</p>
 			<p class="mb-0 text-xs">
-				© {currentYear} Gruyère Padel Club
+				<span>© {currentYear} Gruyère Padel Club</span>
 			</p>
 		</div>
-		<div class="hidden lg:flex-1 lg:flex lg:justify-end">
+		<div class="hidden lg:flex lg:flex-1 lg:justify-end">
 			<img src={grue} alt="La gruyère" />
 		</div>
 	</div>
 </footer>
-
-<div class="bg-white py-5">
-	<div
-		class="border-1 border-secondary rounded bg-slate-50 p-4 text-center max-w-2xl mx-auto shadow-xl"
-	>
-		<h3>--- sera enlevé ---</h3>
-		<p class="text-sm">
-			@Maxime et comité, un ami (vrai designer, pas comme moi) s'est amusé à faire des logos hier,
-			vous en pensez quoi?
-		</p>
-		<div class="flex flex-col justify-around items-center gap-5 sm:max-h-72 sm:flex-row">
-			<img src={pc_gruyere} class="w-40 sm:w-50" alt="" />
-			<img src={pc_gruyere_2} class="w-40 sm:w-50" alt="" />
-		</div>
-	</div>
-</div>

@@ -10,5 +10,5 @@
 			target="_blank">{email}</a
 		>
 	</p>
-	<h2 class="lg:text-center lg:mt-20">À bientôt sur les courts!</h2>
+	<h2 class="lg:mt-20 lg:text-center">À bientôt sur les courts!</h2>
 </section>

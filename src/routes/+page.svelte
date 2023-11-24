@@ -1,7 +1,7 @@
 <script>
 	import Header from '$lib/components/header.svelte';
-	import Intro from '$lib/components/intro.svelte';
 	import Club from '$lib/components/club.svelte';
+	import Terrains from '$lib/components/terrains.svelte';
 	import Outro from '$lib/components/outro.svelte';
 	import Footer from '$lib/components/footer.svelte';
 	import { gsap } from 'gsap';
@@ -24,8 +24,8 @@
 <Header />
 <main class="bg-white py-10 lg:py-16">
 	<div class="container">
-		<Intro />
 		<Club />
+		<Terrains />
 		<Outro />
 	</div>
 </main>
