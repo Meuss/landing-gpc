@@ -4,7 +4,6 @@
 	import emailicon from '$lib/assets/footer-email.svg';
 	import grue from '$lib/assets/footer-grue.svg';
 	import logo from '$lib/assets/footer-logo.svg';
-	import pdficon from '$lib/assets/pdf.svg';
 	import { instagramlink, email } from '$lib/variables';
 </script>
 
@@ -34,11 +33,6 @@
 					<img src={emailicon} alt="email" class="inline-block" />
 				</a>
 			</div>
-			<p class="flex gap-2 text-xs">
-				<a href="statuts.pdf" target="_blank" class="inline-flex gap-2 font-normal"
-					><span>Statuts du club</span> <img src={pdficon} alt="statuts pdf" /></a
-				>
-			</p>
 			<p class="mb-0 text-xs">
 				<span>© {currentYear} Gruyère Padel Club</span>
 			</p>

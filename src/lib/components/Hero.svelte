@@ -2,7 +2,7 @@
 	import court from '$lib/assets/court.webp';
 	import courtMedium from '$lib/assets/court-medium.webp';
 	import courtSmall from '$lib/assets/court-small.webp';
-	import Logo from './logo.svelte';
+	import Logo from './Logo.svelte';
 </script>
 
 <header class="relative flex flex-col justify-between pb-10 text-white lg:pb-20">
@@ -11,7 +11,7 @@
 	</div>
 	<div class="container">
 		<div>
-			<h1>Sortez vos raquettes,<br />le Padel débarque à Bulle!</h1>
+			<h1><slot /></h1>
 		</div>
 	</div>
 	<div class="absolute inset-0 -z-10">

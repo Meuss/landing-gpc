@@ -1,6 +1,5 @@
 <script>
 	import users from '$lib/assets/users.svg';
-	import Team from './team.svelte';
 </script>
 
 <section>
@@ -13,7 +12,7 @@
 		</p>
 		<p>
 			Le club a été formé en 2023 et souhaite promouvoir le Padel pour tous en Gruyère, soutenir la
-			formation et favoriser la compétition.
+			formation et favoriser la compétition. Plus d'infos sur le comité <a href="/comite">ici</a>.
 		</p>
 		<p>
 			En rejoignant notre club, vous bénéficierez d'une multitude d'avantages exclusifs. Restez à
@@ -28,5 +27,4 @@
 			<span>Devenir membre</span>
 		</a>
 	</div>
-	<Team />
 </section>

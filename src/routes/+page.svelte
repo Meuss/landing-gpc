@@ -1,9 +1,9 @@
 <script>
-	import Header from '$lib/components/header.svelte';
-	import Club from '$lib/components/club.svelte';
-	import Terrains from '$lib/components/terrains.svelte';
-	import Outro from '$lib/components/outro.svelte';
-	import Footer from '$lib/components/footer.svelte';
+	import Hero from '$lib/components/Hero.svelte';
+	import Club from '$lib/components/Club.svelte';
+	import Terrains from '$lib/components/Terrains.svelte';
+	import Outro from '$lib/components/Outro.svelte';
+	import Footer from '$lib/components/Footer.svelte';
 	import { gsap } from 'gsap';
 	import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 	import { ScrollSmoother } from 'gsap/dist/ScrollSmoother';
@@ -21,7 +21,9 @@
 	});
 </script>
 
-<Header />
+<Hero>
+	Sortez vos raquettes,<br />le Padel débarque à Bulle!
+</Hero>
 <main class="bg-white py-10 lg:py-16">
 	<div class="container">
 		<Club />
