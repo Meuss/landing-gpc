@@ -12,6 +12,6 @@ npm run dev
 
 ## Deploy
 
-Pushing to the `netlify` branch will trigger a deploy to netlify.
+Pushing to the `staging` branch will trigger a deploy to netlify.
 
 Pushing to the `master` branch will trigger a deploy to infomaniak.
