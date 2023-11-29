@@ -21,6 +21,20 @@
 	});
 </script>
 
+<svelte:head>
+	<title>Gruyère Padel Club</title>
+	<meta property="og:title" content="Gruyère Padel Club" />
+	<meta
+		name="description"
+		content="Le site officiel du Gruyère Padel Club à Bulle, qui a pour but de promouvoir le Padel pour tous en Gruyère. Venez découvrir ce magnifique sport!"
+	/>
+	<meta
+		property="og:description"
+		content="Le site officiel du Gruyère Padel Club à Bulle, qui a pour but de promouvoir le Padel pour tous en Gruyère. Venez découvrir ce magnifique sport!"
+	/>
+	<meta property="og:url" content="https://gruyerepadel.ch" />
+</svelte:head>
+
 <Hero>
 	Sortez vos raquettes,<br />le Padel débarque à Bulle!
 </Hero>

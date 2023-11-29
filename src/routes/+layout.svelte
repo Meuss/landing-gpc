@@ -1,13 +1,13 @@
 <script>
 	import '../app.css';
 	import Hamburger from '$lib/components/Hamburger.svelte';
-	import Sidebar from '$lib/components/Sidebar.svelte';
+	import Offcanvas from '$lib/components/Offcanvas.svelte';
 
 	let open = false;
 </script>
 
 <Hamburger bind:open />
-<Sidebar bind:open />
+<Offcanvas bind:open />
 <div class="wrapper">
 	<slot />
 </div>
