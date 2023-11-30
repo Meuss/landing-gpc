@@ -6,13 +6,13 @@
 
 <svelte:head>
 	<title>Le comité | Gruyère Padel Club</title>
-
 	<meta property="og:title" content="Le comité | Gruyère Padel Club" />
 	<meta name="description" content="La liste des membres du comité du Gruyère Padel Club à Bulle" />
 	<meta
 		property="og:description"
 		content="La liste des membres du comité du Gruyère Padel Club à Bulle"
 	/>
+	<meta property="og:url" content="https://gruyerepadel.ch/comite" />
 </svelte:head>
 
 <Hero>Le comité</Hero>

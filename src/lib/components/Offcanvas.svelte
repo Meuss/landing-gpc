@@ -7,29 +7,26 @@
 	import grue from '$lib/assets/footer-grue.svg';
 
 	export let open = false;
-	function isActive(path: string) {
-		return $page.url.pathname === path;
-	}
+	$: isActiveHome = $page.url.pathname === '/';
+	$: isActiveComite = $page.url.pathname === '/comite';
 </script>
 
 <aside
-	class="fixed z-10 flex h-screen w-screen flex-col justify-between bg-primary p-10 text-white shadow-lg"
+	class="pointer-events-none fixed z-10 flex h-screen w-screen flex-col justify-between bg-primary p-10 text-white opacity-0 shadow-lg transition-opacity duration-200"
 	class:open
 >
 	<div></div>
-	<nav
-		class="align-center flex flex-col items-center gap-4 font-serif text-4xl lg:gap-0 lg:text-6xl"
-	>
+	<nav class="align-center flex flex-col items-center gap-8 font-serif text-4xl lg:text-6xl">
 		<a
 			href="/"
-			class:active={isActive('/')}
-			class="menulink no-underline"
+			class:active={isActiveHome}
+			class="menulink border-b-2 border-transparent leading-none no-underline transition-colors duration-200 lg:border-b-4"
 			on:click={() => (open = !open)}>Accueil</a
 		>
 		<a
 			href="/comite"
-			class:active={isActive('/comite')}
-			class="menulink no-underline"
+			class:active={isActiveComite}
+			class="menulink border-b-2 border-transparent leading-none no-underline transition-colors duration-200 lg:border-b-4"
 			on:click={() => (open = !open)}>Le comité</a
 		>
 		<div class="mt-8 grid w-full max-w-[150px] grid-flow-col grid-cols-2 gap-3 lg:hidden">
@@ -77,17 +74,10 @@
 </aside>
 
 <style>
-	aside {
-		pointer-events: none;
-		opacity: 0;
-		transition: opacity 0.2s ease-in-out;
-	}
-	.menulink {
-		transition: color 0.3s ease-in-out;
-	}
 	.active,
 	.menulink:hover {
 		color: theme('colors.secondary');
+		border-color: theme('colors.secondary');
 	}
 	.open {
 		pointer-events: auto;

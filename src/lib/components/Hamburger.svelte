@@ -3,6 +3,7 @@
 </script>
 
 <button
+	aria-label="Menu"
 	class="fixed right-4 top-4 z-20 cursor-pointer rounded-full border-none bg-white p-3 text-primary shadow hover:text-gray-700 focus:outline-none"
 	class:open
 	on:click={() => (open = !open)}

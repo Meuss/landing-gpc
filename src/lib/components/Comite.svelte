@@ -8,7 +8,7 @@
 	<div
 		class="mx-auto grid justify-items-center gap-5 sm:grid-cols-2 md:grid-cols-3 md:gap-8 lg:grid-cols-4 lg:justify-items-stretch"
 	>
-		{#each members as member, i}
+		{#each members as member}
 			<div
 				class="flex max-w-[300px] flex-col items-center gap-4 rounded-md border border-secondary px-4 py-3 md:max-w-full xl:px-8 xl:py-6"
 			>
