@@ -29,4 +29,5 @@ jobs:
           target-server: ${{ secrets.SSH_HOST }}
           remote-user: ${{ secrets.SSH_USER }}
           private-ssh-key: ${{ secrets.SSH_KEY }}
+          source-path: ./build/
           destination-path: ~/sites/gruyerepadel.ch/
