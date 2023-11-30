@@ -2,7 +2,7 @@
 	import court from '$lib/assets/court.webp';
 	import courtMedium from '$lib/assets/court-medium.webp';
 	import courtSmall from '$lib/assets/court-small.webp';
-	import Logo from './Logo.svelte';
+	import Logo from '$lib/components/Logo.svelte';
 </script>
 
 <header class="relative flex flex-col justify-between pb-10 text-white lg:pb-20">
