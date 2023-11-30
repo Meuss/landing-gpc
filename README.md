@@ -13,8 +13,8 @@ npm run dev
 ```
 
 ```bash
-npm run check # run svelte-check and check typescript
-npm run lint # check prettier and eslint
+npm run check # run svelte-check + check typescript
+npm run lint # check prettier + eslint
 npm run format # format with prettier
 npm run preview # preview production build
 ```
