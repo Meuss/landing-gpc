@@ -12,7 +12,7 @@
 </script>
 
 <aside
-	class="pointer-events-none fixed z-10 flex h-[100svh] w-screen flex-col justify-between bg-primary p-10 text-white opacity-0 shadow-lg transition-opacity duration-200"
+	class="pointer-events-none fixed z-10 flex h-[100dvh] w-screen flex-col justify-between bg-primary p-10 text-white opacity-0 shadow-lg transition-opacity duration-200"
 	class:open
 >
 	<div></div>
