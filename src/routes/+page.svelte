@@ -35,9 +35,7 @@
 	<meta property="og:url" content="https://gruyerepadel.ch" />
 </svelte:head>
 
-<Hero>
-	Sortez vos raquettes,<br />le Padel débarque à Bulle!
-</Hero>
+<Hero>Gruyère Padel Club</Hero>
 <main class="bg-white py-10 lg:py-16">
 	<div class="container">
 		<Club />

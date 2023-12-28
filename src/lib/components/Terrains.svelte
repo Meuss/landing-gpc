@@ -22,10 +22,7 @@
 				nouveaux sports, a réalisé un investissement significatif pour développer le padel, une
 				discipline en plein essor et encore méconnue dans la région.
 			</p>
-			<p>
-				Suivez-nous sur instagram pour être informé/e de l’avancement des travaux et de l’ouverture
-				officielle!
-			</p>
+			<p>Suivez-nous sur instagram pour être informé/e des dernières nouvelles et des événements</p>
 			<a class="btn" href={instagramlink} target="_blank">
 				<img src={instagram} alt="instagram" />
 				<span>Suivre sur instagram</span>
